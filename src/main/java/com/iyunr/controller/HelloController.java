@@ -38,11 +38,11 @@ public class HelloController {
 	@RequestMapping("/hello")
 	@ResponseBody	//@ResponseBody注解加不加都能返回
 	public String home(HttpServletRequest request){
-		logger.info("this is an info logger");
-		logger.warn("this is an warn logger");
-		logger.error("this is an error logger");
-		logger.debug("this is a debug logger");
-		int i = 1/0;	//异常测试
+//		logger.info("this is an info logger");
+//		logger.warn("this is an warn logger");
+//		logger.error("this is an error logger");
+//		logger.debug("this is a debug logger");
+//		int i = 1/0;	//异常测试
 		return "Hello World";
 	}
 	
@@ -145,6 +145,5 @@ public class HelloController {
 		Map<String, Integer> data = userService.testTran(user, "4");
 		return "新增成功 "+data.get("addNum")+" 条，"+"修改成功 "+data.get("delNum")+" 条";
 	}
-	
 	
 }

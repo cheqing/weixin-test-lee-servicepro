@@ -1,6 +1,11 @@
 项目技术架构：SpringBoot+Druid+Mybatis
 本项目主要为了配合weixin-test-lee微信项目提供后台业务服务而做，
 
+小程序相关：
+	微信小程序Nginx-SSL配置：https://jingyan.baidu.com/article/e4511cf37584c02b845eaf1a.html
+	用Nginx实现微信小程序本地SSL请求：https://zhuanlan.zhihu.com/p/23640321
+	微信小程序的部署：http://blog.csdn.net/wangqi880/article/details/60869822
+
 springboot项目参考文章:
 	http://projects.spring.io/spring-boot/
 	https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started

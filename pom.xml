@@ -57,7 +57,7 @@
 		    <groupId>com.alibaba</groupId>
 		    <artifactId>druid</artifactId>
 		    <version>1.1.1</version>
-		    <scope>runtime</scope> 
+		    <!-- <scope>runtime</scope> --> 
 		</dependency>
 		
 		<!-- mybatis -->
@@ -152,6 +152,14 @@
 		    <target>1.7</target>
 		    <encoding>UTF-8</encoding><!-- 指定编码格式，否则在DOS下运行mvn compile命令时会出现莫名的错误，因为系统默认使用GBK编码 -->  
 		  </configuration>
+		</plugin>
+		<!-- 打包时忽略test测试 -->
+		<plugin>  
+		    <groupId>org.apache.maven.plugins</groupId>  
+		    <artifactId>maven-surefire-plugin</artifactId>  
+		    <configuration>  
+		      <skipTests>true</skipTests>  
+		    </configuration>  
 		</plugin>
 	</plugins>
 </build>
